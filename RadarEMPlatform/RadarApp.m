@@ -270,7 +270,7 @@ classdef RadarApp < handle
             end
         end
 
-        % 绘图降采样：若点数超过阈值，按均匀间隔抽取至最大数量
+        % 绘图降采样：若点数超过阈值，按均匀间隔抽取至最大数量..
         function [x,y] = decimateForPlot(app, x, y)
             N = numel(x);
             if N <= app.maxPlotPoints
